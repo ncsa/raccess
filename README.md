@@ -38,7 +38,7 @@ cipher BF-CBC                      # change to your preferred cipher option (e.g
 reneg-sec 0			   
 keepalive 10 120
 dev tun			 	   # must be the same as in server.conf
-remote 141.142.236.89 443 tcp	   # replace with ip-address of OpenVPN server, port and protocol (UDP/TCP)
+remote 141.142.130.244 443 tcp	   # replace with ip-address of OpenVPN server, port and protocol (UDP/TCP)
 auth-nocache
 client
 auth-user-pass			   # authenticates with username and password
@@ -143,3 +143,5 @@ sudo openvpn --config client.conf
 ## Teardown
 
 To stop the OpenVPN server/client, `ctrl-c` would suffice.
+
+[![Analytics](https://earnest-crow-394007.as.r.appspot.com/test?pixel)](https://github.com/ncsa/raccess)
